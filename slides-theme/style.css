@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Exo;
+  src: url(fonts/Exo-Regular.ttf)
+}
+@font-face {
+  font-family: Exo;
+  src: url(fonts/Exo-SemiBold.ttf)
+  font-weight: bold;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Exo;
+  font-size: 32px;
+  text-align: center;
+}
+
+.word h1 {
+  margin-top: 25%;
+}
+
+.reveal p, .reveal li {
+  font-size: 1.375em;
+  line-height: 1.1375em;
+}
+
+.reveal h1,.reveal h2, .reveal h3 {
+  font-weight: bold;
+}
+
+.slides section {
+  min-height: 700px;
+}
+
+.reveal h1 {
+  font-size: 4em;
+  margin-bottom: 3rem;
+}
+
+/* overrides */
+.reveal ul {
+  display: block;
+}
+.reveal pre code {
+  font-size: 1.5rem;
+  line-height: 1em;
+  padding: 0.5em;
+  max-height: none;
+}
+
+.poem {
+  white-space: pre;
+  text-align: left;
+}
+
+.reveal .small-code code, .reveal .small-code span {
+  font-size: .8rem;
+}
