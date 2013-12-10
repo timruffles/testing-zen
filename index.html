@@ -643,6 +643,85 @@ Testable.prototype["-privateFn"] = function() {}
 </script></section>
 
 <section data-markdown data-state=word><script type="text/template">
+  # Functional tests
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Frontend
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Bang for buck
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Real browsers
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Command line
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Karma
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+## Getting the kit
+
+```bash
+npm install --save phantomjs karma karma-mocha  karma-chai
+vim karma.conf.js
+```
+
+```javascript
+module.exports = function(config) {
+  config.set({
+    frameworks: ['mocha','chai'],
+    browsers: ['Chrome', 'Firefox'],
+    files: [
+      'tests/*_test.js'
+    ],
+    client: {
+      mocha: {
+        ui: 'bdd'
+      }
+    }
+  });
+};
+```
+</script></section>
+
+
+<section data-markdown data-state=word><script type="text/template">
+## Hello Karma
+
+```javascript
+describe("karma testing",function() {
+
+  it("is clearly in the browser, I'm parsing URLs with an anchor tag",function() {
+    var urlStr = "http://example.com"
+    var url = parseUrl(urlStr) 
+    assert.equal(url.hostname,"example.com")
+  })
+
+})
+
+function parseUrl(str) {
+  parseUrl.parser = parseUrl.parser || document.createElement("a")
+  parseUrl.parser.href = str
+  return ["hostname","protocol","path"].reduce(function(h,k) {
+    h[k] = parseUrl.parser[k]
+    return h
+  },{})
+}
+```
+</script></section>
+
+
+
+
+<section data-markdown data-state=word><script type="text/template">
   # Mocks/stubs
 </script></section>
 
