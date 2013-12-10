@@ -23,7 +23,8 @@
     "karma-requirejs": "~0.2.0",
     "karma-coffee-preprocessor": "~0.1.1",
     "karma": "~0.10.8",
-    "phantomjs": "~1.9.2-5"
+    "phantomjs": "~1.9.2-5",
+    "supertest": "~0.8.2"
   },
   "devDependencies": {
     "karma-chai": "0.0.2"

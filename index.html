@@ -680,6 +680,8 @@ module.exports = function(config) {
     frameworks: ['mocha','chai'],
     browsers: ['Chrome', 'Firefox'],
     files: [
+      'vendor/*.js',
+      'src/*.js',
       'tests/*_test.js'
     ],
     client: {
@@ -719,6 +721,70 @@ function parseUrl(str) {
 </script></section>
 
 
+
+<section data-markdown data-state=word><script type="text/template">
+## Hello widget
+
+```javascript
+describe("annoying cookie widget",function() {
+  it("can be commanded to leave by the user",function() {
+    var widget = new AnnoyingCookie
+    var cares = true
+    widget.ondoesnotcare = function() {
+      cares = false
+    }
+    widget.render()
+    $(widget.el).find(".does_not_care").click()
+    assert.isFalse(cares,"user unable to dismiss stupid cookie warning")
+  })
+})
+```
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+# What not to test
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+# Library code
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+# jQuery, ORM etc
+</script></section>
+
+
+
+<section data-markdown data-state=word><script type="text/template">
+## Hello node
+
+- node-test/app_test.js
+
+```javascript
+var app = require("../app.js")
+var request = require("supertest")
+
+describe("math server 1.1",function() {
+  describe("addition",function() {
+    it("can add",function(done) {
+      request(app)
+        .get('/add/10/15')
+        .expect(/answer/)
+        .expect(/:\s*25/)
+        .expect(200,done)
+    })
+    // I wonder if we should test other types of numbers?
+    // are there edge cases for numbers at all?
+    it("validates numbers",function(done) {
+      request(app)
+        .get('/add/spoon/15')
+        .expect(/error/)
+        .expect(400,done)
+    })
+  })
+})
+```
+</script></section>
 
 
 <section data-markdown data-state=word><script type="text/template">
