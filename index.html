@@ -22,21 +22,44 @@
 
   <h1>Testing Zen</h1>
 
+  ### @timruffles @sidekicksrc
+
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  <h1> @timruffles <br /> founder of SidekickJS</h1>
 </script></section>
 
 <section data-markdown data-state=title><script type="text/template">
   # Testing == Koans
+</script><aside class="notes">
+  <p>advanced side of testing</p>
+  <p>audience like you knows assert()</p>
+  <p>analogy: koans</p>
+</aside></section>
 
-  - koans are quite painful
-  - they tell you that you're stupid and don't understand things
-  - doing it helps you be less stupid, and understand more
-  - both can be violent
-  - both zen and testing can get in the way
-  - in both cases the goal is for them to fade away
-
+<section data-markdown data-state=word><script type="text/template">
+  # Koans can be frustrating
 </script></section>
 
-<section data-markdown data-state=title><script type="text/template">
+<section data-markdown data-state=word><script type="text/template">
+  # Feels like you're stupid
+</script></section>
+<section data-markdown data-state=word><script type="text/template">
+  # Afterwards, you realise you were
+</script></section>
+<section data-markdown data-state=word><script type="text/template">
+  # Both can be violent
+</script></section>
+<section data-markdown data-state=word><script type="text/template">
+  # Both can be mistaken for ends
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # A koan for you:
+</script></section>
+
+<section data-markdown data-state=koan><script type="text/template">
 
 <blockquote class=poem>
 Four friends planned 7 days of silence,
@@ -50,27 +73,32 @@ The final friend smugly remarked,
 
 </script></section>
 
-<section data-markdown data-state=word><script type="text/template">
-# Painful lessons
-</script></section>
-
-<section data-markdown data-state=word><script type="text/template">
-<blockquote class=poem>
-The master asked "this code has a failing test".
-The student "but master, this code has no tests!".
-"Fix the failing test, or I'll not merge".
-</blockquote>
-</script></section>
 
 
-<section data-markdown data-state=word><script type="text/template">
+<section data-markdown data-state=title><script type="text/template">
 # Test 0
 </script></section>
 
-<section data-markdown data-state=word><script type="text/template">
-# Do you have any units?
+<section data-markdown data-state=koan><script type="text/template">
+<blockquote class=poem>
+The master asked "this code has a failing test".
+The student "but master, this code has no tests!".
+Walking away, the master said
+"Fix that failing test, or I'll not merge!"
+</blockquote>
 </script></section>
 
+<section data-markdown data-state=word><script type="text/template">
+# Can you test it?
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+# Very useful test
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+# Sometimes, easily
+</script></section>
 
 <section data-markdown><script type="text/template">
 ```javascript
@@ -92,11 +120,15 @@ it("formats correctly",function() {
 </script></section>
 
 <section data-markdown data-state=word><script type="text/template">
-  # Can it be this simple?
+  # Often this simple?
 </script></section>
 
 <section data-markdown data-state=word><script type="text/template">
   # Get real
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  ![this is async](img/async.png)
 </script></section>
 
 <section data-markdown class=small-code data-state=word><script type="text/template">
@@ -235,7 +267,11 @@ it("formats correctly",function() {
 </script></section>
 
 <section data-markdown data-state=word><script type="text/template">
-  # If you let it be
+  # If you know the sound of one hand clapping
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # If you KISS
 </script></section>
 
 <section data-markdown data-state=word><script type="text/template">
@@ -256,6 +292,30 @@ it("formats correctly",function() {
 },
 
 ```
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Unit tests need units
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  ![yingyang](img/yingyang.png)
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Code can hurt tests
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Units have one job
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Isolate
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # until it's 'too easy'
 </script></section>
 
 <section data-markdown data-state=word><script type="text/template">
@@ -324,28 +384,13 @@ _sendMessage: function(config,email,token) {
 ```
 </script></section>
 
-<section data-markdown data-state=word><script type="text/template">
-  # Unit tests need units
-</script></section>
 
 <section data-markdown data-state=word><script type="text/template">
-  # Units have one job
-</script></section>
-
-<section data-markdown data-state=word><script type="text/template">
-  # Isolate
-</script></section>
-
-<section data-markdown data-state=word><script type="text/template">
-  # until it's 'too easy'
-</script></section>
-
-<section data-markdown data-state=word><script type="text/template">
-  # Tests have taught us modular JS
+  # Tests have taught us modularity
 </script></section>
 
 
-<section data-markdown data-state=word><script type="text/template">
+<section data-markdown data-state=title><script type="text/template">
   # Just functional test!
 </script></section>
 
@@ -419,12 +464,12 @@ it('should setup SMTP transport on initialization', function (done) {
 </script></section>
 
 
-<section data-markdown data-state=word><script type="text/template">
+<section data-markdown data-state=title><script type="text/template">
 # Brutality
 </script></section>
 
 
-<section data-markdown data-state=title><script type="text/template">
+<section data-markdown data-state=koan><script type="text/template">
 
 <blockquote class=poem>
 Desiring to show his wisdom,
@@ -536,13 +581,18 @@ it("creates a user",function(done) {
 
 - Numbers: 0, Infinity, negative, irrational/rational
 - Collections: empty, one, many
-- Strings: empty, whitespace
+- Strings: empty... and a koan
 
 </script></section>
 
 <section data-markdown data-state=word><script type="text/template">
 
 ## Endless Koan of JS
+
+<blockquote>
+I have created a string as long as time itself,
+yet it is not there
+</blockquote>
 
 ```javascript
 var string = "   \t\t\t\t \n \n \t \t\t\t"
@@ -564,8 +614,10 @@ var possibleGitObjectNames = [
 ]
 
 possibleGitObjectNames.forEach(function(setup) {
-  it(util.format("correctly identifies '%s' as a '%s'",setup.name,setup.expected),function() {
-    assert.equal(setup.expect,git.identifyObjectNameType(setup.name))
+  it(util.format("correctly identifies '%s' as a '%s'",
+    setup.name,setup.expected),function() {
+    assert.equal(setup.expect,
+      git.identifyObjectNameType(setup.name))
   })
 })
 
@@ -586,63 +638,7 @@ invalidObjectNames.forEach(function(name) {
 
 </script></section>
 
-
-<section data-markdown data-state=word><script type="text/template">
-```javascript
-function Untestable() {
-  // 'private final'...
-  function privateFn() {
-  }
-}
-
-function Testable() {
-}
-Testable.prototype["-privateFn"] = function() {}
-```
-</script></section>
-
-
-
-<section data-markdown data-state=word><script type="text/template">
-  # Java's problems
-</script></section>
-
-<section data-markdown data-state=word><script type="text/template">
-```javascript
-function Untestable() {
-  // 'private final'...
-  function privateFn() {
-  }
-}
-
-function Testable() {
-}
-Testable.prototype["-privateFn"] = function() {}
-```
-</script></section>
-
-
-<section data-markdown data-state=word><script type="text/template">
-  # OOP's problems
-</script></section>
-
-<section data-markdown data-state=word><script type="text/template">
-  # Coupling
-</script></section>
-
-<section data-markdown data-state=word><script type="text/template">
-  ## Test setup reveals coupling
-</script></section>
-
-<section data-markdown data-state=word><script type="text/template">
-  # No function units
-</script></section>
-
-<section data-markdown data-state=word><script type="text/template">
-  ## Temporal coupling
-</script></section>
-
-<section data-markdown data-state=word><script type="text/template">
+<section data-markdown data-state=title><script type="text/template">
   # Functional tests
 </script></section>
 
@@ -701,7 +697,8 @@ module.exports = function(config) {
 ```javascript
 describe("karma testing",function() {
 
-  it("is clearly in the browser, I'm parsing URLs with an anchor tag",function() {
+  it("is clearly in the browser, I'm parsing URLs" +
+    "with an anchor tag",function() {
     var urlStr = "http://example.com"
     var url = parseUrl(urlStr) 
     assert.equal(url.hostname,"example.com")
@@ -710,7 +707,8 @@ describe("karma testing",function() {
 })
 
 function parseUrl(str) {
-  parseUrl.parser = parseUrl.parser || document.createElement("a")
+  if(!parseUrl.parser)
+    parseUrl.parser = document.createElement("a")
   parseUrl.parser.href = str
   return ["hostname","protocol","path"].reduce(function(h,k) {
     h[k] = parseUrl.parser[k]
@@ -735,25 +733,12 @@ describe("annoying cookie widget",function() {
     }
     widget.render()
     $(widget.el).find(".does_not_care").click()
-    assert.isFalse(cares,"user unable to dismiss stupid cookie warning")
+    assert.isFalse(cares,"user unable to dismiss " +
+      " stupid cookie warning")
   })
 })
 ```
 </script></section>
-
-<section data-markdown data-state=word><script type="text/template">
-# What not to test
-</script></section>
-
-<section data-markdown data-state=word><script type="text/template">
-# Library code
-</script></section>
-
-<section data-markdown data-state=word><script type="text/template">
-# jQuery, ORM etc
-</script></section>
-
-
 
 <section data-markdown data-state=word><script type="text/template">
 ## Hello node
@@ -786,123 +771,236 @@ describe("math server 1.1",function() {
 ```
 </script></section>
 
-
-<section data-markdown data-state=word><script type="text/template">
-  # Mocks/stubs
+<section data-markdown data-state=title><script type="text/template">
+# What not to test
 </script></section>
 
 <section data-markdown data-state=word><script type="text/template">
-  ## Different reasons to be fake
+# Library code
 </script></section>
 
-<section data-markdown><script type="text/template">
-## Stubs
+<section data-markdown data-state=word><script type="text/template">
+# jQuery, ORM etc
+</script></section>
 
-- There to support a unit test
-- Are not assertions
-- Why would we use one?
-- Mostly: because we don't have units!
+<section data-markdown data-state=word><script type="text/template">
+# So stub?
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+# No: wrap
+</script></section>
+
+<section data-markdown data-state=title><script type="text/template">
+  # Are tests enough?
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Test the tests?
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Coverage
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  ![coverage](img/coverage.png)
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # How?
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Annotates source code
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Be honest
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Make uncovered code break the build
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Diminishing returns
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # CI server
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  ![jenkins](img/jenkinsLogo1.png)
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Tests unrun < no tests
+</script></section>
+
+<section data-markdown data-state=title><script type="text/template">
+  # Zen mind is not zen mind
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Beginner mind
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # TDD
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Great for known problems
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # BDD
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Focus on behaviour
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Focus on... syntax?
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # RSpec's influence
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+## Vanity of small differences
 
 ```javascript
-var controller = {
-  handleSignin: function (req,res,err,user) {
-    var header = req.get("X-Auth-Header")
-    // continue...
-  }
-}
-```
-```javascript
-var fake
-beforeEach(function() {
-  fake = {get: function() { return "555444" }}
+test("#hostname",function() {
+  assert("example.com" === url.hostname)
 })
-it("signs in user",function() {
-  controller.handleSignin(fake,{},null,user)
+test("#hostname",function() {
+  assert.equal("example.com",url.hostname)
 })
-```
-</script></section>
-
-<section data-markdown><script type="text/template">
-## Destub
-
-- Separate arrangement from work
-
-```javascript
-var controller = {
-  handleSigin: function(req,res,err,user) {
-    if(err) return res.send(403)
-    if(controller._validateSignin(req.get("X-Auth-Header"),user)) {
-      // signin
-    } else {
-      // show error
-    }
-  },
-  _validateSignin: function (authCode,user) {
-    // flat, pure, synchronous work
-    // ...
-    return isValid
-  }
-}
-```
-```javascript
-it("validates user presents correct authorisation code",function() {
-  controller._validateSignin(correct,user)
+test("provides access to hostname",function() {
+  assert.equal("example.com",url.hostname)
+})
+it("provides access to hostname",function() {
+  expect(url.hostname).to.equal("example.com")
+})
+it("provides access to hostname",function() {
+  url.hostname.should.equal("example.com")
 })
 ```
 </script></section>
 
 <section data-markdown data-state=word><script type="text/template">
-  # Listen
+  <blockquote class="twitter-tweet" lang="en"><p>In 2005 I drunkenly released a dumb hack. It was called RSpec. You are victims on one of the biggest trolls ever committed. You’re welcome.</p>&mdash; Steven R. Baker (@srbaker) <a href="https://twitter.com/srbaker/statuses/345035925232955393">June 13, 2013</a></blockquote>
+  <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/shinypb">@shinypb</a> I do BDD in Ruby with MiniTest. And I don’t use the RSpec syntax.</p>&mdash; Steven R. Baker (@srbaker) <a href="https://twitter.com/srbaker/statuses/345929631829987331">June 15, 2013</a></blockquote>
 </script></section>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <section data-markdown data-state=word><script type="text/template">
-# Fluent...?
-</script></section>
+## Halting problem
 
-<section data-markdown data-state=word><script type="text/template">
-## More stubs?
+- multiply by all languages and frameworks you use
 
 ```javascript
-var buttons = d3.select(el)
-  .selectAll(".button")
-  .data(response.map(function(data) {
-    data.text = data.some_horrible_key
-    return data
-  })
-  .text(function(d) { return d.text })
+x.should.equal(y)
+x.should.be.equalTo(y)
+x.should.be.equal.to(y)
+expect(x).to.equal(y)
+expect(x).to.be.equalTo(y)
+expect(x).equals(y)
 ```
 </script></section>
 
 <section data-markdown data-state=word><script type="text/template">
-## More functions
-
-```javascript
-var buttons = updateButtons(el,formatResponse(response))
-
-function updateButtons(el,data) {
-  d3.select(el
-}
+```
+Given the URL '://example.com/links/?uri_id=cow'
+Then as a programmer
+I can access the hostname as 'example.com'
 ```
 </script></section>
 
 <section data-markdown data-state=word><script type="text/template">
-  ![ying yang](img/yingyang.png)
+  # Writing tests in Regex!
 </script></section>
 
 <section data-markdown data-state=word><script type="text/template">
-  # If you let it be
+  # Cargo cult
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Fear of change
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Investment
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Koans have broad ramification
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Any answers for our koan?
+</script></section>
+
+<section data-markdown data-state=koan><script type="text/template">
+
+<blockquote class=poem>
+Four friends planned 7 days of silence,
+on the forth day one shouted
+"fix the lamp"!
+One of his friends said, "we are not to talk!",
+the other "you two are stupid".
+The final friend smugly remarked,
+"I am the only one who remained silent".
+</blockquote>
+
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Confusing means with ends
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Don't get attached to means
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Methodologies
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Languages
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Platforms
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Paradigms
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # ...professions
 </script></section>
 
 
-
-<section data-markdown><script type="text/template">
-
-# Any other questions?
-
-## @timruffles, @sidekicksrc
-
+<section data-markdown data-state=word><script type="text/template">
+  # means != ends
 </script></section>
 
+<section data-markdown data-state=word><script type="text/template">
+  ![zen](img/zen.png)
+</script></section>
+
+<section data-markdown data-state=word><script type="text/template">
+  # Zen mind is not zen mind
+  ## @timruffles, @sidekicksrc
+</script></section>
 
 </div>
 </div>
